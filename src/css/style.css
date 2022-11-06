@@ -1,0 +1,240 @@
+body {
+    box-sizing: border-box;
+    background-image: url(../img/dia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ---Formulário--- */
+
+.form {
+    background-color: rgba(209, 12, 12, 0.644);
+    color: white;
+    border: 1px solid rgba(255, 0, 191, 0.4);
+    margin: 30px auto 0px auto;
+    align-content: center;
+    width: 650px;
+    padding: 30px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form h1 {
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+}
+
+.form h1 i {
+    margin-left: 4px;
+}
+
+.form h2 {
+    font-family: 'Fira Code', monospace;
+    margin: 5px;
+    text-align: center;
+}
+
+.form span {
+    margin-left: 2px;
+}
+
+#entrebtn {
+    margin-left: 5px;
+    width: 17%;
+    height: 40px;
+    cursor: pointer;
+    color: #ffff;
+    font-weight: bold;
+    background-color: rgb(1, 175, 1);
+    border: 2px solid rgb(1, 175, 1);
+    border-radius: 25px;
+    font-family: 'Fira Code', monospace;
+}
+
+#entrebtn:hover {
+    transition: ease-in-out 0.5s;
+    background-color: #ffff;
+    color: rgb(1, 175, 1);
+}
+
+.campo {
+    display: inline;
+    width: 295.5px;
+    padding: 3px;
+    margin: 6px;
+    border-radius: 20px;
+    border: 2px solid #000047;
+    background-color: #F0F1F2;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+}
+
+.campo::placeholder {
+    color: #000047;
+    position: absolute;
+}
+
+.campo-email-senha {
+    margin: 6px;
+    width: 95%;
+}
+
+.especificacao {
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+}
+
+.selects-data {
+    display: inline;
+    margin: 6px;
+    height: 27px;
+    width: 199px;
+    border-radius: 10px;
+    border: 2px solid #000047;
+    background-color: #F0F1F2;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+}
+
+.check-genero {
+    font-size: 14px;
+    margin: 6px;
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+}
+
+.check-genero p {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.botao-cadastro {
+    margin: auto;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Fira Code', monospace;
+    background-color: rgb(241, 115, 12);
+    border-color: rgb(241, 115, 12);
+    color: #F0F1F2;
+    font-weight: 900;
+
+}
+
+.botao-cadastro:hover {
+    transition: all ease-in 0.5s;
+    background-color: #F0F1F2;
+    color: rgb(241, 115, 12);
+}
+
+/* --- icons --- */
+
+.icons {
+    padding-top: 6px;
+}
+
+.icons p {
+    display: inline;
+    font-size: 18px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+}
+
+.icons i {
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(255, 83, 15);
+}
+
+.icons i:hover {
+    color: rgb(255, 179, 191);
+}
+
+/* ----dark mode----- */
+
+.btn-dark {
+    position: relative;
+    float: right;
+    margin-right:15px;
+    transition: background 0.2s linear;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.sol-lua {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 16px;
+    width: 40px;
+    transform: scale(1.5);
+}
+
+.sol-lua .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .sol-lua .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.dark{
+    background-image: url(../img/noite.jpg);
+}
+
+.dark form {
+    background-color: rgba(0, 0, 56,0.9);
+    color: #fff;
+    border: 1px solid rgba(0, 0, 56,0.9);
+}
+
+.dark .botao-cadastro{
+    background-color: black;
+    border: 1px solid black;
+}
+
+.dark .botao-cadastro:hover{
+    color: black;
+    background-color: white;
+}
+
+.dark .icons i{
+    color: rgb(81, 81, 218);
+}
+
+.dark .icons i:hover{
+    color: black;
+}

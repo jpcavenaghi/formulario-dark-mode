@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+    </style>
+
+     <title>Formulário</title>
+     
+</head>
+
+<body>
+
+    <div class="btn-dark">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label for="chk" class="sol-lua">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+
+    <form method="get" class="form">
+        <h1>Formulário Redes Sociais<i class="fas fa-globe"> </i></h1>
+
+        <h2>Cadastre-se <span>ou</span> <button id="entrebtn">Entre</button></h2>
+        <input type="text" class="campo" name="nome" id="nome" placeholder="Nome:">
+        <input type="text" class="campo" name="sobrenome" id="sobrenome" placeholder="Sobrenome:">
+        <input type="text" class="campo campo-email-senha" name="email" id="email" placeholder="Telefone ou Email:">
+        <br>
+        <input type="password" class="campo campo-email-senha" name="senha" id="senha" placeholder="Insira sua senha:">
+
+
+        <div class="data-nascimento">
+
+            <label class="especificacao">Data De Nascimento:</label>
+
+            <select name="dia" class="selects-data" id="id">
+                <option value="">Dia:</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <select name="mes" class="selects-data" id="mes">
+                <option value="Mês">Mês</option>
+                <option value="Jan">Jan</option>
+                <option value="Fev">Fev</option>
+                <option value="Mar">Mar</option>
+                <option value="Abr">Abr</option>
+                <option value="Mai">Mai</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Ago">Ago</option>
+                <option value="Set">Set</option>
+                <option value="Out">Out</option>
+                <option value="Nov">Nov</option>
+                <option value="Dez">Dez</option>
+            </select>
+
+            <select name="ano" class="selects-data" id="ano">
+                <option value="">Ano:</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+            </select> <br>
+
+        </div>
+
+        <div class="check-genero">
+            <p class="especificacao">Genêro:</p>
+
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" value="masculino" id="masculino">
+
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" value="feminino" id="feminino">
+
+            <label for="pers">Personalizado</label>
+            <input type="radio" name="genero" value="Personalizado" id="pers"> <br>
+        </div>
+
+        <button class="botao-cadastro">Cadastrar</button>
+
+
+        <div class="icons">
+            <p>Ou acesse com:</p>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-github"></i>
+        </div>
+
+
+    </form>
+
+    <script src="./src/js/script.js"></script>
+
+</body>
+</html>
