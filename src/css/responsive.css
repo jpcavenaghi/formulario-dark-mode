@@ -1,0 +1,37 @@
+@media(max-width:425px) {
+    .form {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .form h1 {
+        font-size: 25px;
+    }
+
+    .form h2 {
+        font-size: 20px;
+    }
+
+    .form span {
+        display: block;
+        margin: 5px 0 5px 0;
+    }
+
+    .form #entrebtn {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        font-size: 25px;
+    }
+
+    .icons i {
+        display: flex;
+        flex-direction: row;
+    }
+}
